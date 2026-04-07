@@ -3,7 +3,13 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: "*", // permite cualquier dominio (rápido para pruebas)
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"]
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // 🔹 conexión a MySQL (Railway)
