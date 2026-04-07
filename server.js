@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// conexión a MySQL
+// 🔹 conexión a MySQL (Railway)
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -14,43 +14,8 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME,
   port: process.env.DB_PORT
 });
-// 🔹 obtener todos los productos
-app.get("/productos", (req, res) => {
-  db.query("SELECT * FROM productos", (err, result) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Error");
-    } else {
-      res.json(result);
-    }
-  });
-});
 
-// 🔹 crear producto
-app.post("/productos", (req, res) => {
-  const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
-
-  db.query(
-    `INSERT INTO productos (nombre, descripcion, categoria, precio, imagen, galeria, badge)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    [nombre, descripcion, categoria, precio, imagen, galeria, badge],
-    (err) => {
-      if (err) {
-        console.log(err);
-        res.status(500).send("Error al guardar");
-      } else {
-        res.send("Producto guardado");
-      }
-    }
-  );
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log("🚀 Servidor corriendo en puerto " + PORT);
-});
-
+// 🔐 LOGIN ADMIN
 const ADMIN_USER = "admin";
 const ADMIN_PASS = "1234";
 
@@ -64,6 +29,36 @@ app.post("/login", (req, res) => {
   }
 });
 
+// 🔹 OBTENER PRODUCTOS
+app.get("/productos", (req, res) => {
+  db.query("SELECT * FROM productos", (err, result) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send("Error");
+    }
+    res.json(result);
+  });
+});
+
+// 🔹 CREAR PRODUCTO
+app.post("/productos", (req, res) => {
+  const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
+
+  db.query(
+    `INSERT INTO productos (nombre, descripcion, categoria, precio, imagen, galeria, badge)
+     VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    [nombre, descripcion, categoria, precio, imagen, galeria, badge],
+    (err) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).send("Error al guardar");
+      }
+      res.send("Producto guardado");
+    }
+  );
+});
+
+// 🔹 EDITAR PRODUCTO
 app.put("/productos/:id", (req, res) => {
   const { id } = req.params;
   const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
@@ -78,11 +73,19 @@ app.put("/productos/:id", (req, res) => {
   );
 });
 
+// 🔹 ELIMINAR PRODUCTO
 app.delete("/productos/:id", (req, res) => {
   const { id } = req.params;
 
   db.query("DELETE FROM productos WHERE id=?", [id], (err) => {
     if (err) return res.status(500).send("Error");
-    res.send("Eliminado");
+      res.send("Eliminado");
   });
+});
+
+// 🚀 PUERTO (SIEMPRE AL FINAL)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("🚀 Servidor corriendo en puerto " + PORT);
 });
