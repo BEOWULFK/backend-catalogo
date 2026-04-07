@@ -3,8 +3,10 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
+
+// 🔥 CORS BIEN CONFIGURADO
 const corsOptions = {
-  origin: "*", // permite cualquier dominio (rápido para pruebas)
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 };
@@ -85,11 +87,11 @@ app.delete("/productos/:id", (req, res) => {
 
   db.query("DELETE FROM productos WHERE id=?", [id], (err) => {
     if (err) return res.status(500).send("Error");
-      res.send("Eliminado");
+    res.send("Eliminado");
   });
 });
 
-// 🚀 PUERTO (SIEMPRE AL FINAL)
+// 🚀 PUERTO
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
