@@ -60,7 +60,7 @@ app.get("/productos", (req, res) => {
   });
 });
 
-// 🔹 CREAR PRODUCTO (IMPORTANTE)
+// 🔹 CREAR PRODUCTO
 app.post("/productos", (req, res) => {
   const { nombre, descripcion, categoria, precio, imagen } = req.body;
 
@@ -83,25 +83,34 @@ app.post("/productos", (req, res) => {
   );
 });
 
-// 🔹 EDITAR PRODUCTO
+// 🔹 EDITAR PRODUCTO (CORREGIDO PRO)
 app.put("/productos/:id", (req, res) => {
   const { id } = req.params;
   const { nombre, descripcion, categoria, precio, imagen } = req.body;
 
-  db.query(
-    `UPDATE productos 
-     SET nombre=?, descripcion=?, categoria=?, precio=?, imagen=? 
-     WHERE id=?`,
-    [nombre, descripcion, categoria, precio, imagen, id],
-    (err) => {
-      if (err) {
-        console.error(err);
-        return res.status(500).json({ error: "Error al actualizar" });
-      }
+  let query = `
+    UPDATE productos 
+    SET nombre=?, descripcion=?, categoria=?, precio=?
+  `;
 
-      res.json({ message: "Producto actualizado" });
+  let params = [nombre, descripcion, categoria, precio];
+
+  if (imagen) {
+    query += `, imagen=?`;
+    params.push(imagen);
+  }
+
+  query += ` WHERE id=?`;
+  params.push(id);
+
+  db.query(query, params, (err) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Error al actualizar" });
     }
-  );
+
+    res.json({ message: "Producto actualizado" });
+  });
 });
 
 // 🔹 ELIMINAR
