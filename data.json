@@ -1,0 +1,513 @@
+{
+  "productos": [
+  {
+    "imagen": "productos/imagenes/seguridad/casco-bicicleta-rollerpoints-negro.jpg",
+    "galeria": [
+      "productos/imagenes/seguridad/casco-bicicleta-rollerpoints-azul.jpg",
+      "productos/imagenes/seguridad/casco-bicicleta-rollerpoints-rosado.jpg"
+    ],
+    "categoria": "Seguridad",
+    "nombre": "Casco Rollerpoints",
+    "descripcion": "Casco de protección universal para patines, bicicleta y scooters. Disponible en negro, azul y rosado. Diseño clásico y resistente.",
+    "precio": 24990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/casco-completo-bicicleta.jpg",
+    "galeria": [
+      "productos/imagenes/seguridad/casco-deportivo-niño-naranja.jpeg"
+    ],
+    "categoria": "Seguridad",
+    "nombre": "Casco Completo Bicicleta",
+    "descripcion": "Casco integral para bicicleta. Versión infantil disponible con diseños Rollerpoints. Máxima protección en cabeza y mentón.",
+    "precio": 34990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/casco deportivo niño naranja.jpeg",
+    "categoria": "Seguridad",
+    "nombre": "Casco Deportivo Niño - Naranja",
+    "descripcion": "Casco deportivo para niños en color naranja. Protección ligera y diseño cómodo.",
+    "precio": 24990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/casco deportivo niño rojo.jpeg",
+    "categoria": "Seguridad",
+    "nombre": "Casco Deportivo Niño - Rojo",
+    "descripcion": "Casco deportivo para niños en color rojo. Protección ligera y diseño cómodo.",
+    "precio": 24990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/protecciones-coderas.jpg",
+    "categoria": "Seguridad",
+    "nombre": "Protecciones Coderas",
+    "descripcion": "Coderas de protección para patines y deportes. Talla adulto.",
+    "precio": 15990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/protecciones-infantiles-colores.jpg",
+    "categoria": "Seguridad",
+    "nombre": "Protecciones Infantiles",
+    "descripcion": "Set de protecciones para niños. Coderas, rodilleras y muñequeras en colores.",
+    "precio": 19990
+  },
+  {
+    "imagen": "productos/imagenes/scooters/monopatin-scooter.jpg",
+    "galeria": [
+      "productos/imagenes/scooters/monopatin-scooter-azul.jpg",
+      "productos/imagenes/scooters/monopatin-scooter-verde.jpg"
+    ],
+    "categoria": "Scooters",
+    "nombre": "Monopatín Scooter",
+    "descripcion": "Scooter plegable para desplazamiento urbano. Disponible en varios colores.",
+    "precio": 45990
+  },
+  {
+    "imagen": "productos/imagenes/scooters/monopatin-scooter-grande-rojo.jpg",
+    "galeria": [
+      "productos/imagenes/scooters/monopatin-scooter-grande-rojo-descripcion.jpg",
+      "productos/imagenes/scooters/monopatin-scooter-grande-verde.jpg",
+      "productos/imagenes/scooters/monopatin-scooter-grande-negro-morado.jpg"
+    ],
+    "categoria": "Scooters",
+    "nombre": "Monopatín Scooter Grande",
+    "descripcion": "Scooter de tamaño grande disponible en distintos colores. Estable y cómodo.",
+    "precio": 59990
+  },
+  {
+    "imagen": "productos/imagenes/scooters/monopatin-5-en-1-scooter-morado.jpg",
+    "categoria": "Scooters",
+    "nombre": "Monopatín 5 en 1 Scooter Morado",
+    "descripcion": "Scooter evolutivo 5 en 1. Crece con el niño.",
+    "precio": 79990,
+    "badge": "Nuevo"
+  },
+  {
+    "imagen": "productos/imagenes/scooters/monopatin-5-en-1-scooter-rojo.jpg",
+    "categoria": "Scooters",
+    "nombre": "Monopatín 5 en 1 Scooter Rojo",
+    "descripcion": "Scooter 5 en 1 en color rojo. Múltiples configuraciones.",
+    "precio": 79990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/monopatin-princesa.jpg",
+    "categoria": "Niños",
+    "nombre": "Monopatín Princesa",
+    "descripcion": "Scooter infantil con diseño de princesa. Para las más pequeñas.",
+    "precio": 39990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/monopatin-diseno-infantil.jpg",
+    "categoria": "Niños",
+    "nombre": "Monopatín Diseño Infantil",
+    "descripcion": "Scooter con diseños infantiles. Colores divertidos.",
+    "precio": 39990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/monopatin-nino-disenos.jpg",
+    "categoria": "Niños",
+    "nombre": "Monopatín Niño Diseños",
+    "descripcion": "Scooter infantil con diseños variados. Ideal para los más pequeños.",
+    "precio": 39990,
+    "badge": "Nuevo"
+  },
+  {
+    "imagen": "productos/imagenes/ninos/monopatin-bebe.jpg",
+    "categoria": "Niños",
+    "nombre": "Monopatín Bebé",
+    "descripcion": "Scooter para bebés. Primeros pasos sobre ruedas.",
+    "precio": 44990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/patin-de-aprendizaje-morado.jpg",
+    "galeria": [
+      "productos/imagenes/ninos/patin-de-aprendizaje-descripcion.jpg",
+      "productos/imagenes/ninos/patin-de-aprendizaje-descripcion-1.jpg",
+      "productos/imagenes/ninos/patin-de-aprendizaje-rosado.jpg"
+    ],
+    "categoria": "Niños",
+    "nombre": "Patín de Aprendizaje Morado",
+    "descripcion": "Patín de 4 ruedas para aprender. Ideal para principiantes.",
+    "precio": 34990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/patin-de-aprendizaje-rosado.jpg",
+    "galeria": [
+      "productos/imagenes/ninos/patin-de-aprendizaje-descripcion.jpg",
+      "productos/imagenes/ninos/patin-de-aprendizaje-descripcion-1.jpg",
+      "productos/imagenes/ninos/patin-de-aprendizaje-morado.jpg"
+    ],
+    "categoria": "Niños",
+    "nombre": "Patín de Aprendizaje Rosado",
+    "descripcion": "Patín de aprendizaje en color rosado. Talla ajustable.",
+    "precio": 34990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/patin-scooter-infantil.jpg",
+    "categoria": "Niños",
+    "nombre": "Patín Scooter Infantil",
+    "descripcion": "Combinación patín-scooter para niños. Diversión y aprendizaje.",
+    "precio": 37990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/monopatin-infantil-diseno.jpg",
+    "galeria": [
+      "productos/imagenes/ninos/monopatin-infantil-diseno-1.jpg"
+    ],
+    "categoria": "Niños",
+    "nombre": "Monopatín Infantil Diseño",
+    "descripcion": "Scooter infantil con diseños. Ligero y resistente.",
+    "precio": 36990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/bicicleta-de-impulso-nino-color-morada.jpg",
+    "galeria": [
+      "productos/imagenes/ninos/bicicleta-de-impulso-nino-color-morada.jpg",
+      "productos/imagenes/ninos/bicicleta-de-impulso-nino-descripcion.jpg",
+      "productos/imagenes/ninos/bicicleta-de-impulso-nino-diseno-negra.jpg",
+      "productos/imagenes/ninos/bicicleta-de-impulso-nino-diseno.jpg"
+    ],
+    "categoria": "Niños",
+    "nombre": "Bicicleta de Impulso Niño",
+    "descripcion": "Bicicleta sin pedales para aprender equilibrio. Disponible en varios colores y diseños.",
+    "precio": 59990
+  },
+  {
+    "imagen": "productos/imagenes/ninos/patines-chicos-skate-negro.jpg",
+    "galeria": [
+      "productos/imagenes/ninos/patines-chicos-skate-rosados.jpg"
+    ],
+    "categoria": "Niños",
+    "nombre": "Patines Chicos Skate",
+    "descripcion": "Patines tipo skate para niños. Disponibles en negro y rosado.",
+    "precio": 170000
+  },
+  {
+    "imagen": "productos/imagenes/ninos/patinetas-infantiles-tablas.jpg",
+    "categoria": "Niños",
+    "nombre": "Patinetas Infantiles Tablas",
+    "descripcion": "Skateboards infantiles. Tablas de tamaño reducido.",
+    "precio": 35990
+  },
+  {
+    "imagen": "productos/imagenes/patines/patin-humo.jpg",
+    "galeria": [
+      "productos/imagenes/patines/patin-humo-descripcion.jpg",
+      "productos/imagenes/patines/patin-humo-colores.jpg",
+      "productos/imagenes/patines/patin-humo-azul.jpg"
+    ],
+    "categoria": "Patines en línea",
+    "nombre": "Patín Humo",
+    "descripcion": "Patines en línea estilo humo. Diseño urbano y ligero.",
+    "precio": 89990,
+    "badge": "Destacado"
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines-black-magic-negros.jpg",
+    "categoria": "Patines en línea",
+    "nombre": "Patines Black Magic Negros",
+    "descripcion": "Patines en línea color negro. Estilo clásico.",
+    "precio": 85990
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines-canariam-negros.jpg",
+    "galeria": [
+      "productos/imagenes/patines/patines-canariam-negros-negro.jpg",
+      "productos/imagenes/patines/patines-canariam-rosados.jpg",
+      "productos/imagenes/patines/patines-canarim-morados.jpg",
+      "productos/imagenes/patines/patines-canariam-rosados-descripcion.jpg",
+      "productos/imagenes/patines/patines-canariam-morados-con-negro.jpg"
+    ],
+    "categoria": "Patines en línea",
+    "nombre": "Patines Canariam",
+    "descripcion": "Patines Canariam disponibles en negro, rosado y morado. Confort y rendimiento.",
+    "precio": 420000
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines-chicago-azul.jpg",
+    "galeria": [
+      "productos/imagenes/patines/patines-chicago-morado.jpg"
+    ],
+    "categoria": "Patines en línea",
+    "nombre": "Patines Chicago",
+    "descripcion": "Patines Chicago urbanos en varios colores. Ideales para principiantes.",
+    "precio": 150000
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines-cityrun-colores.jpg",
+    "galeria": [
+      "productos/imagenes/patines/patines-cityrun-colores-1.jpg",
+      "productos/imagenes/patines/patines-cityrun-azul.jpg",
+      "productos/imagenes/patines/patines-cityrun-morado.jpg",
+      "productos/imagenes/patines/patines-cityrun-negro.jpg",
+      "productos/imagenes/patines/patines-cityrun-negro-morado.jpg"
+    ],
+    "categoria": "Patines en línea",
+    "nombre": "Patines Cityrun Colores",
+    "descripcion": "Patines urbanos disponibles en varios colores.",
+    "precio": 365000
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines convertibles chicos skate.webp",
+    "categoria": "Patines en línea",
+    "nombre": "Patines Convertibles Chicos Skate",
+    "descripcion": "Patines convertibles para chicos, tipo skate ajustable.",
+    "precio": 280000
+  },
+  {
+    "imagen": "productos/imagenes/patines/patines-sport-runner-morados.jpg",
+    "galeria": [
+      "productos/imagenes/patines/patines-sport-runner-rosados.jpg",
+      "productos/imagenes/patines/patin-sport-runner.jpg"
+    ],
+    "categoria": "Patines en línea",
+    "nombre": "Patines Sport Runner Morados",
+    "descripcion": "Sport Runner en color morado. Fitness y ocio.",
+    "precio": 79990
+  },
+  {
+    "imagen": "productos/imagenes/skates/patineta-pequena.jpg",
+    "galeria": [
+      "productos/imagenes/skates/patineta-pequena-diseno-1.jpg",
+      "productos/imagenes/skates/patineta-pequena-diseno-2.jpg",
+      "productos/imagenes/skates/patineta-pequena-color-solido.jpg",
+      "productos/imagenes/skates/patineta-pequena-color-solido-cian.jpg",
+      "productos/imagenes/skates/patineta-pequena-color-solido-verde.jpg"
+    ],
+    "categoria": "Skateboard",
+    "nombre": "Patineta Pequeña",
+    "descripcion": "Skateboard infantil. Tamaño reducido para niños.",
+    "precio": 29990
+  },
+  {
+    "imagen": "productos/imagenes/skates/patineta-2-ruedas.jpg",
+    "galeria": [
+      "productos/imagenes/skates/patineta-2-ruedas-dienos.jpg"
+    ],
+    "categoria": "Skateboard",
+    "nombre": "Patineta 2 Ruedas",
+    "descripcion": "Skateboard balance board de 2 ruedas. Diversión y equilibrio.",
+    "precio": 39990
+  },
+  {
+    "imagen": "productos/imagenes/skates/patinetas-grandes.jpg",
+    "galeria": [
+      "productos/imagenes/skates/patinetas-grandes-disenos.jpg",
+      "productos/imagenes/skates/patinetas-grandes-disenos-1.jpg",
+      "productos/imagenes/skates/patinetas-grandes-disenos-2.jpg",
+      "productos/imagenes/skates/patinetas-grandes-disenos-3.jpg",
+      "productos/imagenes/skates/patinetas-grandes-disenos-4.jpg"
+    ],
+    "categoria": "Skateboard",
+    "nombre": "Patinetas Grandes",
+    "descripcion": "Skateboards de tamaño completo. Varios diseños.",
+    "precio": 45990
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/ruedas-de-patines-repuestos.jpg",
+    "categoria": "Accesorios",
+    "nombre": "Ruedas de Patines Repuesto",
+    "descripcion": "Kit de ruedas de repuesto para patines. Alta durabilidad.",
+    "precio": 19990
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/kit-de-rodamientos-completo.jpg",
+    "galeria": [
+      "productos/imagenes/accesorios/kit-de-rodaminetos.jpg"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "Kit de Rodamientos",
+    "descripcion": "Rodamientos para patines. Mayor velocidad y durabilidad.",
+    "precio": 14990
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/bolso-de-patines.jpg",
+    "galeria": [
+      "productos/imagenes/accesorios/bolso-de-patines-diseno.jpg",
+      "productos/imagenes/accesorios/bolso-de-patines-infantil.jpg",
+      "productos/imagenes/accesorios/bolso-de-patines-infantil-disenos.jpg",
+      "productos/imagenes/accesorios/bolso-de-patines-infantil-disenos-1.jpg",
+      "productos/imagenes/accesorios/bolso-de-patines-infantil-disenos-2.jpg"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "Bolso de Patines",
+    "descripcion": "Bolso para transportar patines. Varios tamaños y diseños.",
+    "precio": 24990
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/mangas-deportivas.jpg",
+    "categoria": "Accesorios",
+    "nombre": "Mangas Deportivas",
+    "descripcion": "Mangas compresivas para patinaje. Protección y comodidad.",
+    "precio": 12990
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/traje-licra-diseno.jpg",
+    "galeria": [
+      "productos/imagenes/accesorios/traje-licra-diseno-1.jpg",
+      "productos/imagenes/accesorios/traje-licra-diseno-2.jpg",
+      "productos/imagenes/accesorios/traje-licra-diseno-3.jpg",
+      "productos/imagenes/accesorios/traje-licra-diseno-4.jpg",
+      "productos/imagenes/accesorios/traje-licra-negro-adulto.jpg",
+      "productos/imagenes/accesorios/traje-licra-infantil-diseno.jpg",
+      "productos/imagenes/accesorios/traje-licra-infantil-diseno-f.jpg"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "Traje Licra",
+    "descripcion": "Trajes de licra para patinaje artístico y competencia. Adulto e infantil.",
+    "precio": 34990
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/kit de proteccion c2 color negro.webp",
+    "galeria": [
+      "productos/imagenes/seguridad/kit de proteccion c2 color azul claro.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color fucsia.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color lila.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color morado.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color rosado.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color negro.webp"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "kit de protección c2",
+    "descripcion": "kit de protección c2",
+    "precio": 68000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/kit de proteccion c2 color lila.webp",
+    "galeria": [
+      "productos/imagenes/seguridad/kit de proteccion c2 color azul claro.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color fucsia.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color lila.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color morado.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color rosado.webp",
+      "productos/imagenes/seguridad/kit de proteccion c2 color negro.webp"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "kit de protección c1",
+    "descripcion": "kit de protección c1",
+    "precio": 68000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/kit de proteccion chicos skate.webp",
+    "galeria": [
+      "productos/imagenes/seguridad/kit de proteccion chicos skate.webp",
+      "productos/imagenes/seguridad/kit de proteccion chicos skate 2.webp"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "kit de protección chicos skate",
+    "descripcion": "kit de protección chicos skate",
+    "precio": 69000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/kit de proteccion roller points.webp",
+    "galeria": [
+      "productos/imagenes/seguridad/kit de proteccion roller points.webp"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "kit de proteccion roller points",
+    "descripcion": "kit de proteccion roller points",
+    "precio": 69000
+  },
+  {
+    "imagen": "productos/imagenes/accesorios/mangas-deportivas.jpg",
+    "galeria": [
+      "productos/imagenes/accesorios/mangas-deportivas.jpg"
+    ],
+    "categoria": "Accesorios",
+    "nombre": "mangas de voleiball Miyagi",
+    "descripcion": "mangas de voleiball Miyagi",
+    "precio": 30000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/rodillera elastica miyagi.webp",
+    "galeria": [],
+    "categoria": "Accesorios",
+    "nombre": "rodillera elastica Miyagi",
+    "descripcion": "rodillera elastica Miyagi",
+    "precio": 20000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/rodillera miyagui deportiva.webp",
+    "galeria": [],
+    "categoria": "Accesorios",
+    "nombre": "rodillera miyagui deportiva",
+    "descripcion": "rodillera miyagui deportiva",
+    "precio": 60000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/proteccion para voleyball manga miyagi.webp",
+    "galeria": [],
+    "categoria": "Accesorios",
+    "nombre": "proteccion para voleyball manga miyagi",
+    "descripcion": "proteccion para voleyball manga miyagi",
+    "precio": 30000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/codera super alcolchada.jpg",
+    "galeria": [],
+    "categoria": "Accesorios",
+    "nombre": "codera super alcolchada",
+    "descripcion": "codera super alcolchada",
+    "precio": 52000
+  },
+  {
+    "imagen": "productos/imagenes/seguridad/rodillera canariam super acolchada.webp",
+    "galeria": [],
+    "categoria": "Accesorios",
+    "nombre": "rodillera canariam super acolchada",
+    "descripcion": "rodillera canariam super acolchada",
+    "precio": 66000
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon baloncesto molten azul.webp",
+    "categoria": "Balones",
+    "nombre": "Balón Baloncesto Molten Azul",
+    "descripcion": "Balón Molten para baloncesto. Modelo azul.",
+    "precio": 60000
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon basquet molten mb7 pro.webp",
+    "categoria": "Balones",
+    "nombre": "Balón Básquet Molten MB7 Pro",
+    "descripcion": "Balón Molten MB7 Pro para básquet.",
+    "precio": 100000
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon basquet molten mb7.webp",
+    "categoria": "Balones",
+    "nombre": "Balón Básquet Molten MB7",
+    "descripcion": "Balón Molten MB7 para básquet.",
+    "precio": 80000
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon molten baloncesto gr5.jpg",
+    "categoria": "Balones",
+    "nombre": "Balón Molten Baloncesto GR5",
+    "descripcion": "Balón Molten GR5 para baloncesto.",
+    "precio": 115000
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon molten fg 1501 futsal.webp",
+    "categoria": "Balones",
+    "nombre": "Balón Molten FG 1501 Futsal",
+    "descripcion": "Balón Molten para futsal FG-1501.",
+    "precio": null
+  },
+  {
+    "imagen": "productos/imagenes/balones/balon voleiball molten.webp",
+    "categoria": "Balones",
+    "nombre": "Balón Voleiball Molten",
+    "descripcion": "Balón Molten para voleibol.",
+    "precio": 140000
+  },
+  {
+    "imagen": "productos/imagenes/patines electricos/monopatin electrico beston b1.webp",
+    "galeria": [
+      "productos/imagenes/patines electricos/monopatin electrico beston b1.webp"
+    ],
+    "categoria": "Patines eléctricos",
+    "nombre": "Monopatín Eléctrico Beston B1",
+    "descripcion": "Monopatín eléctrico Beston B1. Batería integrada, autonomía estimada ~25 km (según carga y peso). Velocidad máxima y autonomía dependen del uso.",
+    "precio": 700000,
+    "badge": "Eléctrico"
+  }
+  ]
+}
