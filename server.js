@@ -4,17 +4,15 @@ const cors = require("cors");
 
 const app = express();
 
-// 🔥 CORS BIEN CONFIGURADO
-const corsOptions = {
+app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
-};
+}));
 
-app.use(cors(corsOptions));
 app.use(express.json());
 
-// 🔹 conexión a MySQL (Railway)
+// 🔹 CONEXIÓN MYSQL
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -23,17 +21,30 @@ const db = mysql.createConnection({
   port: process.env.DB_PORT
 });
 
-// 🔐 LOGIN ADMIN
+// 🔴 verificar conexión
+db.connect((err) => {
+  if (err) {
+    console.error("❌ Error conexión BD:", err);
+  } else {
+    console.log("✅ Conectado a MySQL");
+  }
+});
+
+// 🔐 LOGIN
 const ADMIN_USER = "admin";
 const ADMIN_PASS = "1234";
 
 app.post("/login", (req, res) => {
   const { usuario, password } = req.body;
 
+  if (!usuario || !password) {
+    return res.status(400).json({ success: false, message: "Faltan datos" });
+  }
+
   if (usuario === ADMIN_USER && password === ADMIN_PASS) {
-    res.json({ success: true });
+    return res.json({ success: true });
   } else {
-    res.status(401).json({ success: false });
+    return res.status(401).json({ success: false });
   }
 });
 
@@ -41,27 +52,33 @@ app.post("/login", (req, res) => {
 app.get("/productos", (req, res) => {
   db.query("SELECT * FROM productos", (err, result) => {
     if (err) {
-      console.log(err);
-      return res.status(500).send("Error");
+      console.error(err);
+      return res.status(500).json({ error: "Error al obtener productos" });
     }
+
     res.json(result);
   });
 });
 
-// 🔹 CREAR PRODUCTO
+// 🔹 CREAR PRODUCTO (IMPORTANTE)
 app.post("/productos", (req, res) => {
-  const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
+  const { nombre, descripcion, categoria, precio, imagen } = req.body;
+
+  if (!nombre || !precio) {
+    return res.status(400).json({ error: "Datos incompletos" });
+  }
 
   db.query(
-    `INSERT INTO productos (nombre, descripcion, categoria, precio, imagen, galeria, badge)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
-    [nombre, descripcion, categoria, precio, imagen, galeria, badge],
+    `INSERT INTO productos (nombre, descripcion, categoria, precio, imagen)
+     VALUES (?, ?, ?, ?, ?)`,
+    [nombre, descripcion, categoria, precio, imagen],
     (err) => {
       if (err) {
-        console.log(err);
-        return res.status(500).send("Error al guardar");
+        console.error(err);
+        return res.status(500).json({ error: "Error al guardar producto" });
       }
-      res.send("Producto guardado");
+
+      res.json({ message: "Producto guardado correctamente" });
     }
   );
 });
@@ -69,25 +86,35 @@ app.post("/productos", (req, res) => {
 // 🔹 EDITAR PRODUCTO
 app.put("/productos/:id", (req, res) => {
   const { id } = req.params;
-  const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
+  const { nombre, descripcion, categoria, precio, imagen } = req.body;
 
   db.query(
-    "UPDATE productos SET nombre=?, descripcion=?, categoria=?, precio=?, imagen=?, galeria=?, badge=? WHERE id=?",
-    [nombre, descripcion, categoria, precio, imagen, galeria, badge, id],
+    `UPDATE productos 
+     SET nombre=?, descripcion=?, categoria=?, precio=?, imagen=? 
+     WHERE id=?`,
+    [nombre, descripcion, categoria, precio, imagen, id],
     (err) => {
-      if (err) return res.status(500).send("Error");
-      res.send("Actualizado");
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
+
+      res.json({ message: "Producto actualizado" });
     }
   );
 });
 
-// 🔹 ELIMINAR PRODUCTO
+// 🔹 ELIMINAR
 app.delete("/productos/:id", (req, res) => {
   const { id } = req.params;
 
   db.query("DELETE FROM productos WHERE id=?", [id], (err) => {
-    if (err) return res.status(500).send("Error");
-    res.send("Eliminado");
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Error al eliminar" });
+    }
+
+    res.json({ message: "Producto eliminado" });
   });
 });
 
