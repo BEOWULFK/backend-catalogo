@@ -50,3 +50,39 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("🚀 Servidor corriendo en puerto " + PORT);
 });
+
+const ADMIN_USER = "admin";
+const ADMIN_PASS = "1234";
+
+app.post("/login", (req, res) => {
+  const { usuario, password } = req.body;
+
+  if (usuario === ADMIN_USER && password === ADMIN_PASS) {
+    res.json({ success: true });
+  } else {
+    res.status(401).json({ success: false });
+  }
+});
+
+app.put("/productos/:id", (req, res) => {
+  const { id } = req.params;
+  const { nombre, descripcion, categoria, precio, imagen, galeria, badge } = req.body;
+
+  db.query(
+    "UPDATE productos SET nombre=?, descripcion=?, categoria=?, precio=?, imagen=?, galeria=?, badge=? WHERE id=?",
+    [nombre, descripcion, categoria, precio, imagen, galeria, badge, id],
+    (err) => {
+      if (err) return res.status(500).send("Error");
+      res.send("Actualizado");
+    }
+  );
+});
+
+app.delete("/productos/:id", (req, res) => {
+  const { id } = req.params;
+
+  db.query("DELETE FROM productos WHERE id=?", [id], (err) => {
+    if (err) return res.status(500).send("Error");
+    res.send("Eliminado");
+  });
+});
