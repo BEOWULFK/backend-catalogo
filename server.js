@@ -31,8 +31,8 @@ db.connect((err) => {
 });
 
 // 🔐 LOGIN
-const ADMIN_USER = "admin";
-const ADMIN_PASS = "1234";
+const ADMIN_USER = "IvanDario";
+const ADMIN_PASS = "123456789";
 
 app.post("/login", (req, res) => {
   const { usuario, password } = req.body;
